@@ -20,9 +20,9 @@ app.post('/data', async (req, res) => {
   } else {
     let values =
       typeof body.values === 'string' ? JSON.parse(body.values) : body.values;
-    let picture = values['_0'] || null;
-    let customerNumber = values['_1'] || null;
-    let cnum = values['_2'] || null;
+    let picture = values['_1'] || null;
+    let customerNumber = values['_2'] || null;
+    let cnum = values['_3'] || null;
 
     let data = JSON.stringify({ picture, customerNumber, cnum });
 
